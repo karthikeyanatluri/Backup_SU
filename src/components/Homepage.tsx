@@ -891,6 +891,23 @@ export const Homepage: React.FC<HomepageProps> = ({
                 <span>𝕏</span> @supragna_2k27
               </a>
               <a
+                href="https://www.linkedin.com/school/siddhartha-academy/posts/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Official LinkedIn - Siddhartha Academy"
+                style={{
+                  color: '#ded1bb',
+                  fontSize: '0.86rem',
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '5px',
+                  padding: '4px 8px',
+                }}
+              >
+                LinkedIn
+              </a>
+              <a
                 href="https://www.instagram.com/supragna_2k27?rpxt=MXFqMnd3N2xhYnZvaw=="
                 target="_blank"
                 rel="noopener noreferrer"
