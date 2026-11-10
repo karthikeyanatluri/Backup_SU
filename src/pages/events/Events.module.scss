@@ -1,0 +1,1250 @@
+.eventsmaincontainer {
+  overflow: hidden;
+  .aboutBB {
+    background-image: url("/svgs/registration/back.svg");
+    // filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.828)) sepia()
+    //   saturate(4.5) hue-rotate(-10deg);
+    transition: filter 0.3s;
+    margin: 2.1rem;
+    z-index: 1000;
+
+    &:hover {
+      filter: drop-shadow(0px 0px 9px rgba(255, 255, 255, 1)) sepia()
+        // saturate(4.5) hue-rotate(-10deg);
+    }
+
+    @media (max-width: 700px) {
+      margin: 1.2rem 0.6rem;
+    }
+  }
+  .text {
+    position: absolute;
+    left: 35vw;
+    width: 30.625vw;
+    height: 26.74svh;
+    bottom: 2svh;
+  }
+  .eventscontainer {
+    width: 100vw;
+    overflow: hidden;
+    height: 100svh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 2;
+    position: relative;
+    // mask-image: url("/svgs/events/Exclude.svg");
+
+    mask-composite: exclude;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    // mask-size:cover;
+    mask-size: cover;
+    scale: 1.01;
+
+    //   -webkit-mask-image: url("/svgs/events/Exclude.svg");
+    // -webkit-mask-size: 100% 100%;
+    // -webkit-mask-position: bottom;
+    // -webkit-mask-repeat: no-repeat;
+
+    .quizzes {
+      position: absolute;
+      width: 37.5vw;
+      height: 60svh;
+      left: 0;
+      bottom: 0;
+      transform-origin: center;
+      z-index: 4;
+      cursor: pointer;
+    }
+
+    .music {
+      position: absolute;
+      top: 0;
+      left: 1.8vw;
+      width: 42.5vw;
+      height: 84svh;
+      transform-origin: center;
+      z-index: 2;
+      object-fit: fill;
+      object-position: center;
+      cursor: pointer;
+    }
+
+    .misc {
+      position: absolute;
+      width: 37.5vw;
+      height: 60svh;
+      bottom: 0;
+      right: 0;
+      z-index: 4;
+      cursor: pointer;
+    }
+
+    .dance {
+      position: absolute;
+      width: 42.5vw;
+      height: 84svh;
+      z-index: 2;
+      top: 0;
+      right: 1.8vw;
+      transform-origin: center;
+      object-position: center;
+      cursor: pointer;
+    }
+
+    .photography {
+      position: absolute;
+      left: 50%;
+      translate: -50%;
+      width: 29vw;
+      height: 74svh;
+      top: 0;
+      z-index: 3;
+      cursor: pointer;
+    }
+
+    // .photography:hover {
+    //    transform: scale(1.1) !important;
+    //   filter: saturate(1.5);
+    // }
+
+    .text {
+      position: absolute;
+      left: 35vw;
+      width: 30.625vw;
+      height: 26.74svh;
+      bottom: 2svh;
+      pointer-events: none;
+      z-index: 10;
+    }
+    @media ((min-aspect-ratio: 1.7) or (max-aspect-ratio: 1.7)) {
+      .quizzes {
+        width: 37.5vw;
+        height: 60svh;
+        left: 0;
+        bottom: 0;
+        z-index: 4;
+        cursor: pointer;
+      }
+      .music {
+        top: 0;
+        left: 1.8vw;
+        width: 42.5vw;
+        height: 84svh;
+        z-index: 2;
+        cursor: pointer;
+      }
+      .photography {
+        width: 29vw;
+        height: 74svh;
+        left: 50%;
+        translate: -50%;
+        top: 0;
+        z-index: 3;
+        cursor: pointer;
+      }
+      .dance {
+        top: 0;
+        right: 1.8vw;
+        width: 42.5vw;
+        height: 84svh;
+        z-index: 2;
+        cursor: pointer;
+      }
+      .misc {
+        width: 37.5vw;
+        height: 60svh;
+        right: 0;
+        bottom: 0;
+        z-index: 4;
+        cursor: pointer;
+      }
+    }
+    @media((max-width: 1200px) and (max-aspect-ratio: 1.45)){
+      .text,.music,.photography,.dance,.quizzes,.misc{
+        top: unset;
+        bottom: unset;
+        left: unset;
+        right: unset;
+        translate: none;
+        // pointer-events: none;
+        scale: 1;
+         touch-action: manipulation;
+      }
+      .text:hover,
+.music:hover,
+.photography:hover,
+.dance:hover,
+.quizzes:hover,
+.misc:hover {
+  /* Reset whatever hover styles you had */
+  scale: none;
+  // transform: none;
+  filter: none;
+  opacity: 1;
+  cursor: default;
+}
+      .text{
+        
+        left:0;
+        top: 50.5svh;
+        translate : 0 -50%;
+        height: 36.55svh;
+        width: 37.55vw;
+      }
+      .music{
+        width: 77.31vw;
+        height: 35.75svh;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        clip-path: polygon(0% 0%,
+        0% 90%,
+        38% 100%,
+        100% 0%);
+      }
+      .quizzes{
+        width: 70.08vw;
+        height: 46.5svh;
+        position: absolute;
+        left:unset;
+        right: 0;
+        top: -2px;
+        z-index: 2;
+        clip-path: polygon(0% 80%,
+        15% 100%,
+        100% 70%,
+        100% 0%,
+        70% 0%);
+
+      }
+      .photography{
+        width: 81.31vw;
+        height: 35svh;
+        bottom: 0;
+        left: 0;
+        top: unset;
+        translate: none;
+        z-index: 5;
+        clip-path: polygon(0% 10%,
+          0% 100%,
+        100% 100%,
+        38% 0%,
+        );
+      }
+      .dance{
+        width: 70.08vw;
+        height: 46svh;
+        position: absolute;
+        left:unset;
+        top:unset;
+        right: 0;
+        bottom: 0;
+        z-index: 4;
+        clip-path: polygon(
+    100% 20%,   /* top-right */
+    10 10%,    /* tip at upper-left */
+    0% 30%,
+    90% 100%, /* bottom-left taper */
+    100% 100% /* bottom-right base */
+  );
+
+      }
+      .misc {
+    position: absolute;
+    width: 59.91vw;
+    height: 30svh;
+    top: 50svh;
+    right: 0;
+    /* Use CSS variables for translation */
+    --tx: 0; /* default X offset */
+    --ty: -50%; /* default Y offset */
+    --rot: 0deg; /* default rotation */
+    transform: translate(var(--tx), var(--ty)) rotate(var(--rot));
+    transition: transform 0s ease;
+    z-index: 3;
+    clip-path: polygon(100% 0, 0 40%, 0 60%, 100% 100%);
+
+  }
+
+    }
+  }
+  
+}
+@keyframes collapseToCenter {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--tx), var(--ty)) rotate(var(--rot)) scale(0.5);
+    opacity: 0;
+  }
+}
+
+.fan {
+  animation: collapseToCenter 0.1s ease forwards;
+  pointer-events: none;
+}
+.fanContainer {
+  position: relative;
+  width: 100vw;
+  height: 100svh;
+  transform: rotate(-90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fanImage {
+  position: absolute;
+  width: 15vw;
+  height: auto;
+  transform-origin: bottom center;
+  // transition: transform 0.8s ease-in-out, left 0.8s ease, top 0.8s ease;
+  cursor: pointer;
+
+  &:nth-child(1) {
+    transform: rotate(-40deg);
+  }
+  &:nth-child(2) {
+    transform: rotate(-20deg);
+  }
+  &:nth-child(3) {
+    transform: rotate(0deg);
+  }
+  &:nth-child(4) {
+    transform: rotate(20deg);
+  }
+  &:nth-child(5) {
+    transform: rotate(40deg);
+  }
+}
+
+.fanCollapse {
+  transform: rotate(0deg) scale(0.8) translateY(-50%);
+  z-index: 2;
+}
+.eventsmaincontainer {
+  width: 100vw;
+  height: 100svh;
+  position: relative;
+  background-size: cover;
+
+  .text {
+    position: absolute;
+    left: 35vw;
+    width: 30.625vw;
+    height: 26.74svh;
+    bottom: 2svh;
+    z-index: 10;
+  }
+  
+  .eventscontainer {
+    position: relative;
+    width: 100vw;
+    height: 100svh;
+    overflow: visible;
+    .folding {
+      pointer-events: none;
+      // &:hover {
+      //   // transform: none !important;
+      //   // filter: none !important;
+      // }
+    }
+  }
+  // @media (hover: hover) and (pointer: fine) {
+  // .eventscontainer img:hover {
+  //   transform: scale(2.05); /* only desktop/laptops */
+  // }
+// }
+
+
+  // .music,
+  // .quizzes,
+  // .photography,
+  // .dance,
+  // .misc {
+  //   position: absolute;
+  //   bottom: 15svh; // roughly bottom area
+  //   left: 50vw; // centered horizontally start
+  //   width: 20vw;
+  //   height: auto;
+  //   cursor: pointer;
+  //   user-select: none;
+  //   transform-origin: bottom center;
+  //   transition: transform 0.9s ease, opacity 0.9s ease;
+  // }
+
+  // Left to right (index 0 to 4)
+  // .music {
+  //   left: 15vw;
+  //   bottom: 10svh;
+  //   // transform: rotate(-40deg);
+  // }
+  // .quizzes {
+  //   left: 28vw;
+  //   bottom: 8svh;
+  //   // transform: rotate(-20deg);
+  // }
+  // .photography {
+  //   left: 42vw;
+  //   bottom: 15svh;
+  //   // transform: rotate(0deg);
+  // }
+  // .dance {
+  //   left: 56vw;
+  //   bottom: 8svh;
+  //   // transform: rotate(20deg);
+  // }
+  // .misc {
+  //   left: 70vw;
+  //   bottom: 10svh;
+  //   // transform: rotate(40deg);
+  // }
+
+  // .eventscontainer img.fold:nth-child(5) {
+  //   transform: rotate(-40deg);
+  // }
+
+  // .eventscontainer img.fold:nth-child(4) {
+  //   transform: rotate(-120deg);
+  // }
+
+  // .eventscontainer img.fold:nth-child(3) {
+  //   transform: rotate(-50deg);
+  // }
+
+  // .eventscontainer img.fold:nth-child(2) {
+  //   transform: rotate(-20deg);
+  // }
+
+  // .eventscontainer img.fold:nth-child(1) {
+  // transform: rotate(40deg);
+  // }
+}
+
+/* ========================================================================== */
+/* SUPRAGNA2K27 EVENTS - SCHOOL TO DEPARTMENT NAVIGATION STYLES              */
+/* ========================================================================== */
+
+.supragnaEventsContainer {
+  min-height: 100svh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #f7ede2;
+  font-family: "Shippori Mincho", "Abhaya Libre", serif;
+  padding: 1.5rem 2rem 4rem;
+  box-sizing: border-box;
+
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+        circle at 50% 15%,
+        rgba(26, 12, 10, 0.45) 0%,
+        rgba(10, 5, 8, 0.88) 100%
+      ),
+      rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+.supragnaHeader {
+  position: relative;
+  z-index: 10;
+  max-width: 1380px;
+  margin: 0 auto 2.5rem;
+}
+
+.topNavRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.backBtnWrapper {
+  background-image: url("/svgs/registration/back.svg");
+  transition: filter 0.3s, transform 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    filter: drop-shadow(0 0 10px rgba(242, 221, 124, 0.8));
+    transform: scale(1.05);
+  }
+}
+
+.customBackBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(30, 16, 18, 0.85);
+  border: 1px solid rgba(242, 221, 124, 0.45);
+  color: #f2dd7c;
+  padding: 0.6rem 1.4rem;
+  border-radius: 9999px;
+  font-family: "Japan Ramen", "Abhaya Libre", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  .backArrow {
+    font-size: 1.25rem;
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    background: rgba(242, 221, 124, 0.2);
+    border-color: #f2dd7c;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(242, 221, 124, 0.4);
+    transform: translateX(-4px);
+
+    .backArrow {
+      transform: translateX(-3px);
+    }
+  }
+}
+
+.schoolSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding: 0.3rem;
+  background: rgba(18, 9, 12, 0.7);
+  border: 1px solid rgba(242, 221, 124, 0.2);
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+}
+
+.switcherTab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: transparent;
+  border: none;
+  color: rgba(247, 237, 226, 0.75);
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  font-family: "Shippori Mincho", serif;
+  font-size: 0.88rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  white-space: nowrap;
+
+  .switcherIcon {
+    font-size: 1rem;
+  }
+
+  &:hover {
+    color: #f2dd7c;
+    background: rgba(242, 221, 124, 0.1);
+  }
+
+  &.activeSwitcherTab {
+    background: linear-gradient(135deg, #d36f66 0%, #b23a3a 100%);
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(211, 111, 102, 0.4);
+  }
+}
+
+.titleSection {
+  text-align: center;
+  position: relative;
+  padding: 0.5rem 1rem;
+
+  .kanjiBadge {
+    display: inline-block;
+    font-size: 1.15rem;
+    letter-spacing: 0.35em;
+    color: #f2dd7c;
+    margin-bottom: 0.4rem;
+    opacity: 0.85;
+    text-shadow: 0 0 10px rgba(242, 221, 124, 0.4);
+  }
+
+  .mainTitle {
+    font-family: "Japan Ramen", "Abhaya Libre Extrabold", serif;
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    letter-spacing: 0.08em;
+    margin: 0 0 0.5rem;
+    background: linear-gradient(180deg, #ffffff 15%, #f2dd7c 75%, #bda32d 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.8));
+  }
+
+  .subTitle {
+    font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+    color: rgba(247, 237, 226, 0.8);
+    max-width: 820px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.eventsContentArea {
+  position: relative;
+  z-index: 10;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+/* ========================================================================== */
+/* LEVEL 1: SCHOOLS GRID                                                      */
+/* ========================================================================== */
+
+.schoolsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.schoolCard {
+  position: relative;
+  background: linear-gradient(
+      145deg,
+      rgba(35, 18, 22, 0.88) 0%,
+      rgba(18, 9, 13, 0.94) 100%
+    );
+  border: 1px solid rgba(242, 221, 124, 0.35);
+  border-radius: 18px;
+  padding: 2.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(242, 221, 124, 0.15);
+  backdrop-filter: blur(12px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    border-color: rgba(242, 221, 124, 0.85);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.7),
+      0 0 25px rgba(242, 221, 124, 0.3),
+      inset 0 1px 1px rgba(242, 221, 124, 0.35);
+
+    .cardKanjiWatermark {
+      opacity: 0.18;
+      transform: scale(1.08) rotate(-4deg);
+    }
+
+    .enterPill {
+      background: linear-gradient(135deg, #f2dd7c 0%, #bda32d 100%);
+      color: #12090d;
+      border-color: #f2dd7c;
+      transform: translateX(4px);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid #f2dd7c;
+    outline-offset: 3px;
+  }
+}
+
+.cardKanjiWatermark {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  font-family: "Shippori Mincho", serif;
+  font-size: 8rem;
+  font-weight: 900;
+  color: #f2dd7c;
+  opacity: 0.08;
+  pointer-events: none;
+  user-select: none;
+  transition: all 0.4s ease;
+  line-height: 1;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  position: relative;
+  z-index: 1;
+
+  .schoolIcon {
+    font-size: 2.5rem;
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+  }
+
+  .schoolCode {
+    font-family: "Japan Ramen", sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+    padding: 0.3rem 0.85rem;
+    background: rgba(242, 221, 124, 0.12);
+    border: 1px solid rgba(242, 221, 124, 0.3);
+    border-radius: 9999px;
+    color: #f2dd7c;
+  }
+}
+
+.cardBody {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+
+  .schoolName {
+    font-family: "Japan Ramen", "Abhaya Libre Extrabold", serif;
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin: 0 0 0.3rem;
+    line-height: 1.25;
+  }
+
+  .japaneseSub {
+    font-size: 0.95rem;
+    color: #f2dd7c;
+    letter-spacing: 0.2em;
+    margin-bottom: 0.8rem;
+    opacity: 0.9;
+  }
+
+  .schoolTagline {
+    font-size: 1.02rem;
+    font-weight: 600;
+    color: #e5a478;
+    margin: 0 0 0.75rem;
+    line-height: 1.4;
+  }
+
+  .schoolDesc {
+    font-size: 0.94rem;
+    color: rgba(247, 237, 226, 0.75);
+    line-height: 1.6;
+    margin: 0 0 1.5rem;
+  }
+}
+
+.cardFooter {
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid rgba(242, 221, 124, 0.15);
+  padding-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.badgeRow {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.deptCountBadge,
+.eventCountBadge {
+  font-size: 0.82rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.deptCountBadge {
+  background: rgba(211, 111, 102, 0.25);
+  color: #ff9b91;
+  border: 1px solid rgba(211, 111, 102, 0.4);
+}
+
+.eventCountBadge {
+  background: rgba(242, 221, 124, 0.15);
+  color: #f2dd7c;
+  border: 1px solid rgba(242, 221, 124, 0.3);
+}
+
+.enterPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  font-family: "Japan Ramen", sans-serif;
+  font-size: 0.88rem;
+  color: #f2dd7c;
+  border: 1px solid rgba(242, 221, 124, 0.4);
+  background: rgba(242, 221, 124, 0.08);
+  transition: all 0.3s ease;
+
+  .arrowIcon {
+    font-size: 1.1rem;
+    transition: transform 0.25s;
+  }
+}
+
+/* ========================================================================== */
+/* LEVEL 2: DEPARTMENTS GRID                                                  */
+/* ========================================================================== */
+
+.departmentsView {
+  width: 100%;
+}
+
+.departmentsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.6rem;
+}
+
+.departmentCard {
+  background: linear-gradient(
+      140deg,
+      rgba(28, 14, 18, 0.88) 0%,
+      rgba(15, 8, 11, 0.94) 100%
+    );
+  border: 1px solid rgba(242, 221, 124, 0.3);
+  border-radius: 14px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    border-color: rgba(242, 221, 124, 0.8);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65),
+      0 0 20px rgba(242, 221, 124, 0.25);
+
+    .deptAction {
+      background: #f2dd7c;
+      color: #12090d;
+      border-color: #f2dd7c;
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid #f2dd7c;
+    outline-offset: 3px;
+  }
+}
+
+.deptCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.9rem;
+
+  .deptIcon {
+    font-size: 2rem;
+  }
+
+  .deptCodeBadge {
+    font-family: "Japan Ramen", sans-serif;
+    font-size: 0.82rem;
+    padding: 0.25rem 0.65rem;
+    background: rgba(211, 111, 102, 0.2);
+    border: 1px solid rgba(211, 111, 102, 0.4);
+    border-radius: 9999px;
+    color: #ff9b91;
+  }
+}
+
+.deptCardBody {
+  flex: 1;
+
+  .deptTitle {
+    font-family: "Japan Ramen", "Abhaya Libre", serif;
+    font-size: 1.35rem;
+    color: #ffffff;
+    margin: 0 0 0.25rem;
+    line-height: 1.3;
+  }
+
+  .deptKanji {
+    font-size: 0.85rem;
+    color: #f2dd7c;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.6rem;
+    opacity: 0.85;
+  }
+
+  .deptTagline {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #e5a478;
+    margin: 0 0 0.5rem;
+  }
+
+  .deptDesc {
+    font-size: 0.88rem;
+    color: rgba(247, 237, 226, 0.7);
+    line-height: 1.55;
+    margin: 0 0 1.2rem;
+  }
+}
+
+.deptCardFooter {
+  border-top: 1px solid rgba(242, 221, 124, 0.12);
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .deptEventsCount {
+    font-size: 0.85rem;
+    color: #f2dd7c;
+    font-weight: 600;
+  }
+
+  .deptAction {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-size: 0.82rem;
+    color: #f2dd7c;
+    border: 1px solid rgba(242, 221, 124, 0.35);
+    background: rgba(242, 221, 124, 0.06);
+    transition: all 0.25s ease;
+  }
+}
+
+/* ========================================================================== */
+/* LEVEL 3: EVENTS SHOWCASE                                                   */
+/* ========================================================================== */
+
+.eventsShowcaseView {
+  width: 100%;
+}
+
+.eventViewer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.activeEventCard {
+  background: linear-gradient(
+      145deg,
+      rgba(26, 12, 16, 0.94) 0%,
+      rgba(14, 7, 10, 0.97) 100%
+    );
+  border: 1px solid rgba(242, 221, 124, 0.45);
+  border-radius: 20px;
+  padding: 2.4rem;
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 2.5rem;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7),
+    0 0 30px rgba(242, 221, 124, 0.2);
+  backdrop-filter: blur(14px);
+  margin-bottom: 2rem;
+}
+
+.eventImageCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.imageFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(242, 221, 124, 0.3);
+
+  .eventImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .typeBadge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(18, 9, 13, 0.85);
+    color: #f2dd7c;
+    border: 1px solid rgba(242, 221, 124, 0.5);
+    border-radius: 6px;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+}
+
+.eventMetaPill {
+  background: rgba(18, 9, 12, 0.65);
+  border: 1px solid rgba(242, 221, 124, 0.2);
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+
+  .metaRow {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.92rem;
+    color: rgba(247, 237, 226, 0.88);
+
+    .locationIcon {
+      width: 18px;
+      height: 18px;
+    }
+
+    .prizeLabel {
+      color: #f2dd7c;
+    }
+
+    .prizeValue {
+      color: #ffde70;
+      font-size: 1.05rem;
+    }
+  }
+}
+
+.eventDetailsCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .organizerTag {
+    display: inline-block;
+    font-size: 0.85rem;
+    color: #e5a478;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.3rem;
+  }
+
+  .eventHeading {
+    font-family: "Japan Ramen", "Abhaya Libre Extrabold", serif;
+    font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+    color: #ffffff;
+    margin: 0 0 0.4rem;
+    line-height: 1.2;
+  }
+
+  .eventTagline {
+    font-size: 1.1rem;
+    color: #f2dd7c;
+    font-weight: 600;
+    margin-bottom: 1.4rem;
+  }
+
+  .eventSection {
+    margin-bottom: 1.2rem;
+
+    h4 {
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(247, 237, 226, 0.6);
+      margin: 0 0 0.35rem;
+    }
+
+    p {
+      font-size: 0.96rem;
+      color: rgba(247, 237, 226, 0.88);
+      line-height: 1.65;
+      margin: 0;
+    }
+  }
+
+  .eventActionRow {
+    margin-top: 1rem;
+  }
+
+  .registerEventBtn {
+    background: linear-gradient(135deg, #d36f66 0%, #be5964 100%);
+    border: 1px solid rgba(242, 221, 124, 0.4);
+    color: #ffffff;
+    font-family: "Japan Ramen", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 0.85rem 2rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(211, 111, 102, 0.4);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+    &:hover {
+      background: linear-gradient(135deg, #e57d74 0%, #d16772 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(211, 111, 102, 0.6);
+    }
+  }
+}
+
+.carouselControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-bottom: 1.5rem;
+
+  .navArrowBtn {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(30, 16, 18, 0.85);
+    border: 1px solid rgba(242, 221, 124, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .rotateArrow {
+      transform: rotate(180deg);
+    }
+
+    &:hover {
+      background: rgba(242, 221, 124, 0.25);
+      border-color: #f2dd7c;
+      transform: scale(1.1);
+    }
+  }
+
+  .eventIndicator {
+    font-family: "Japan Ramen", sans-serif;
+    font-size: 1.1rem;
+    color: #f2dd7c;
+    letter-spacing: 0.1em;
+  }
+}
+
+.thumbStrip {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+
+  .thumbBtn {
+    background: rgba(20, 10, 14, 0.75);
+    border: 1px solid rgba(242, 221, 124, 0.25);
+    border-radius: 9999px;
+    padding: 0.4rem 1.1rem;
+    color: rgba(247, 237, 226, 0.75);
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+
+    &:hover {
+      border-color: #f2dd7c;
+      color: #fff;
+    }
+
+    &.activeThumb {
+      background: rgba(242, 221, 124, 0.2);
+      border-color: #f2dd7c;
+      color: #f2dd7c;
+      font-weight: 700;
+    }
+  }
+}
+
+.noEventsNotice {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: rgba(20, 10, 14, 0.75);
+  border: 1px solid rgba(242, 221, 124, 0.3);
+  border-radius: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ========================================================================== */
+/* RESPONSIVE MEDIA QUERIES                                                   */
+/* ========================================================================== */
+
+@media (max-width: 960px) {
+  .supragnaEventsContainer {
+    padding: 1.2rem 1rem 3rem;
+  }
+
+  .activeEventCard {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+    padding: 1.8rem;
+  }
+
+  .eventImageCol {
+    max-width: 440px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .schoolsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .departmentsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .topNavRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .schoolSwitcher {
+    width: 100%;
+  }
+
+  .schoolCard {
+    padding: 1.6rem 1.3rem;
+  }
+
+  .cardBody .schoolName {
+    font-size: 1.35rem;
+  }
+
+  .cardFooter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .enterPill {
+    width: 100%;
+    justify-content: center;
+  }
+}

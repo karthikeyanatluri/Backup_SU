@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /about$
+Disallow: /download
+Allow: /aboutus
+
+Sitemap: https://supragna2k27.in/sitemap.xml

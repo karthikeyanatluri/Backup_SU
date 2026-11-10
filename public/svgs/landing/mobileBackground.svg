@@ -3,12 +3,12 @@
 <rect width="447" height="971" transform="translate(0 -206)" fill="url(#paint1_linear_2889_575)"/>
 <defs>
 <linearGradient id="paint0_linear_2889_575" x1="250.739" y1="-123.173" x2="-32.8598" y2="120.23" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BB5564"/>
-<stop offset="1" stop-color="#E5916A"/>
+<stop stop-color="#B85164"/>
+<stop offset="1" stop-color="#E48B68"/>
 </linearGradient>
 <linearGradient id="paint1_linear_2889_575" x1="88.7176" y1="7.39052" x2="-194.304" y2="374.432" gradientUnits="userSpaceOnUse">
-<stop stop-color="#BB5564"/>
-<stop offset="1" stop-color="#E5916A"/>
+<stop stop-color="#B85164"/>
+<stop offset="1" stop-color="#E48B68"/>
 </linearGradient>
 </defs>
 </svg>

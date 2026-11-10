@@ -1,0 +1,31 @@
+import BackButton from '../components/backButton/BackButton';
+import styles from './Brochure.module.scss';
+import pdfFile from '../../assets/Supragna2K27_Brochure.pdf';
+import { FaDownload } from 'react-icons/fa6';
+
+export default function Brochure() {
+
+    return (
+        <div className={styles.brochurePageBg}>
+            <div className={styles.brochurePage}>
+                <BackButton />
+                <div className={styles.title}>Brochure</div>
+                <div className={styles.brochureWrapper}>
+                    <div className={styles.brochureContainer}>
+                        <iframe loading="lazy"
+                            src={`${pdfFile}#toolbar=0&scrollbar=0`}
+                            className={styles.brochureIframe}
+                            title="SUPRAGNA2K27 Brochure"
+                            typeof='application/pdf'
+                        />
+                        <a href={pdfFile} download="SUPRAGNA2K27_Brochure.pdf">
+                            <button className={styles.downloadButton} title='Download SUPRAGNA2K27 Brochure'>
+                                <FaDownload className={styles.downloadIcon} />
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}

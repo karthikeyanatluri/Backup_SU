@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 85" width="340" height="85" fill="none">
+  <defs>
+    <linearGradient id="grad-aether" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F0FF" />
+      <stop offset="100%" stop-color="#7000FF" />
+    </linearGradient>
+    <filter id="glow-aether" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <g transform="translate(10, 8)" filter="url(#glow-aether)">
+    <path d="M15,45 Q15,30 30,30 Q35,15 50,25 Q65,20 65,35 Q75,38 75,48 Q75,55 60,55 L20,55 Q15,55 15,45 Z" stroke="url(#grad-aether)" stroke-width="3.5" fill="none"/><circle cx="42" cy="38" r="4" fill="#00F0FF"/>
+  </g>
+  <g transform="translate(90, 20)">
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" letter-spacing="1.5">
+      AETHER CLOUD
+    </text>
+    <text x="1" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#00F0FF" letter-spacing="2.5" opacity="0.95">
+      NEXT-GEN INFRASTRUCTURE
+    </text>
+  </g>
+</svg>

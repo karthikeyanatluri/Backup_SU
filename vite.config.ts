@@ -1,10 +1,17 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 5174, // run on 5174 so it doesn't conflict with 5173 if running locally
-    host: true,
-  },
-});
+    allowedHosts: ["cdc60be16c44.ngrok-free.app"], // for local
+    host: "0.0.0.0",
+    hmr: {
+      overlay: false
+    },
+    watch: {
+      ignored: ['**/node_modules/**', '**/.git/**', '**/dist/**']
+    }
+  }
+})

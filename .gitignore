@@ -27,3 +27,14 @@ pnpm-debug.log*
 .env
 .env.local
 .env.*.local
+.secrets
+.wrangler/
+
+# Temporary test outputs
+scripts/*.png
+scripts/*.txt
+*.map
+baseline-report.json
+post-audit-report.json
+preview-audit-report.json
+

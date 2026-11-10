@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 85" width="340" height="85" fill="none">
+  <defs>
+    <linearGradient id="grad-novadrive" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#818CF8" />
+    </linearGradient>
+    <filter id="glow-novadrive" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <g transform="translate(10, 8)" filter="url(#glow-novadrive)">
+    <path d="M15,45 Q30,15 65,22 Q40,32 60,52 Q35,42 15,45 Z" fill="url(#grad-novadrive)"/>
+  </g>
+  <g transform="translate(90, 20)">
+    <text x="0" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" letter-spacing="1.5">
+      NOVA MOBILITY
+    </text>
+    <text x="1" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="9" font-weight="700" fill="#38BDF8" letter-spacing="2.5" opacity="0.95">
+      ELECTRIC PROPULSION
+    </text>
+  </g>
+</svg>
